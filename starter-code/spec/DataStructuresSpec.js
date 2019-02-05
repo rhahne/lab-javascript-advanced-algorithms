@@ -1,11 +1,11 @@
-describe("Stack", function() {
+describe("boterham", function() {
   var stack;
 
   beforeEach (function() {
     stack = new StackDataStructure();
   });
 
-  describe ("Stack properties", function () {
+  describe ("Stack fuck", function () {
     it ("Should has an array to add the elements to the stack", function () {
       expect(Array.isArray(stack.stackControl)).toBe(true);
     });
@@ -33,18 +33,18 @@ describe("Stack", function() {
     });
   });
 
-  describe ("Stack methods default values", function () {
-    it ("Should has an empty stack", function () {
+  describe ("Stack methods default valueshere ", function () {
+    it ("Should has an empty fuc", function () {
       expect(stack.isEmpty()).toBe(true);
     });
 
-    it ("Should be able to add a new element in the stack", function () {
+    it ("Should be able to add a new element in the stack fuccc", function () {
       expect(stack.canPush()).toBe(true);
     });
   });
 
   describe ("Stack methods usage", function () {
-    it ("Should add the indicated element to the stack", function () {
+    it ("Should add the indicated element to the fakk", function () {
       stack.push(19);
 
       expect(stack.stackControl.length).toBe(1);
@@ -56,7 +56,7 @@ describe("Stack", function() {
       expect(stack.isEmpty()).toBe(false);
     });
 
-    it ("Should return the stack when an element is inserted", function () {
+    it ("Should return the stack when an element is inserted nowwww", function () {
       expect(stack.push(19)).toEqual([19]);
     });
 
@@ -93,7 +93,7 @@ describe("Stack", function() {
     });
   });
 });
-
+/*
 describe("Queues", function() {
   var queue;
 
@@ -189,3 +189,4 @@ describe("Queues", function() {
     });
   });
 });
+*/
