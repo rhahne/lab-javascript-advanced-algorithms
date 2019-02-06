@@ -1,11 +1,11 @@
-describe("boterham", function() {
+describe("Stack", function() {
   var stack;
 
   beforeEach (function() {
     stack = new StackDataStructure();
   });
 
-  describe ("Stack fuck", function () {
+  describe ("Stack properties", function () {
     it ("Should has an array to add the elements to the stack", function () {
       expect(Array.isArray(stack.stackControl)).toBe(true);
     });
@@ -33,18 +33,18 @@ describe("boterham", function() {
     });
   });
 
-  describe ("Stack methods default valueshere ", function () {
-    it ("Should has an empty fuc", function () {
+  describe ("Stack methods default values", function () {
+    it ("Should has an empty stack", function () {
       expect(stack.isEmpty()).toBe(true);
     });
 
-    it ("Should be able to add a new element in the stack fuccc", function () {
+    it ("Should be able to add a new element in the stack", function () {
       expect(stack.canPush()).toBe(true);
     });
   });
 
   describe ("Stack methods usage", function () {
-    it ("Should add the indicated element to the fakk", function () {
+    it ("Should add the indicated element to the stack", function () {
       stack.push(19);
 
       expect(stack.stackControl.length).toBe(1);
@@ -56,7 +56,7 @@ describe("boterham", function() {
       expect(stack.isEmpty()).toBe(false);
     });
 
-    it ("Should return the stack when an element is inserted nowwww", function () {
+    it ("Should return the stack when an element is inserted", function () {
       expect(stack.push(19)).toEqual([19]);
     });
 
@@ -81,7 +81,7 @@ describe("boterham", function() {
       expect(stack.canPush()).toBe(false);
     });
 
-    it ("Should return the last element inserted in the stack", function () {
+    it ("Should return the last element inserted in the stacksssssss", function () {
       stack.push(19);
       stack.push(88);
 
@@ -93,7 +93,6 @@ describe("boterham", function() {
     });
   });
 });
-/*
 describe("Queues", function() {
   var queue;
 
@@ -156,7 +155,7 @@ describe("Queues", function() {
       expect(queue.enqueue(19)).toEqual([19]);
     });
 
-    it ("Should insert the elements in the reverse received order", function () {
+    it ("Should insert the elements in the reverse received order ssss", function () {
       queue.enqueue(19);
       queue.enqueue(88);
 
@@ -177,7 +176,7 @@ describe("Queues", function() {
       expect(queue.canEnqueue()).toBe(false);
     });
 
-    it ("Should return the first element inserted in the queue", function () {
+    it ("Should return the first element inserted in the queuesssfs", function () {
       queue.enqueue(19);
       queue.enqueue(88);
 
@@ -189,4 +188,3 @@ describe("Queues", function() {
     });
   });
 });
-*/
